@@ -1,0 +1,18 @@
+The <span> tag is an inline element by default, meaning it doesn’t respect height and 
+width properties like block-level elements (e.g., <div>, <p>) do. Inline elements only take up as
+ much space as their content requires, and they don’t create new blocks of space on the page.
+
+To make the height and width properties work on a <span>, you need to change its display property to 
+something that respects these dimensions. For example, you can use:
+
+span {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  background-color: lightblue;
+}
+
+inline-block: Allows the <span> to behave like an 
+inline element but also respect height and width.
+block: Forces the <span> to behave like a block-level element, taking up full width 
+and allowing height to be applied.

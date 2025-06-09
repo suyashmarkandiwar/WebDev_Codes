@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssSelectors</title>
+    <link rel="stylesheet" href="cssSelectors.css">
+</head>
+<body>
+<!-- 
+    >>Element Selector
+    >>ID Selector
+    >>Class Selector
+    >>Universal Selector
+    >>Nested Selector
+    >>Descendant Selector 
+    >>Direct Child Selector
+    
+-->
+
+    <header>
+        <h1>Selectors in css</h1>
+    </header>
+
+    <main>
+        <article id="elementSel">
+            <h2>Element Selector</h2>
+            <p id="p1ID" class="highlighter">Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Officia nihil ex cum, autem impedit architect
+                o. Nemo maiores soluta suscipit vel.
+            </p>
+        </article>
+
+        <article id="idSel">
+            <h2 >ID Selector</h2>
+            <p id="pID" >Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Officia nihil ex cum, autem impedit architect
+                o. Nemo maiores soluta suscipit vel.
+            </p>
+        </article>
+
+        <article id="classSel">
+            <h2 class="highlighter headingstyles">Class Selector</h2>
+            <p class="highlighter">Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Officia nihil ex cum, autem impedit architect
+                o. Nemo maiores soluta suscipit vel.
+            </p>
+        </article>
+
+        <article id="univSel">
+            <h2>Nested Selector:</h2>
+            <p id="nestedId" class="nestedClass">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi sint perspiciatis libero? Porro, molestiae architecto 
+                eaque facilis enim illo nam.
+            </p>
+        </article>
+        <br/>
+
+        <article id="descSel">
+            <h2>Descendant Selector:</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi sint perspiciatis libero? Porro, molestiae architecto 
+                eaque facilis enim illo nam.
+            </p>
+
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatibus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatibus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatibus?</p>
+            </section>
+            
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi sint perspiciatis libero? Porro, molestiae architecto 
+                eaque facilis enim illo nam.
+            </p>
+            
+        </article>
+
+        <article id="dircSel">
+            <h2>Direct Child Selector:</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi sint perspiciatis libero? Porro, molestiae architecto 
+                eaque facilis enim illo nam.
+            </p>
+
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatibus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatibus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatibus?</p>
+            </section>
+            
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Commodi sint perspiciatis libero? Porro, molestiae architecto 
+                eaque facilis enim illo nam.
+            </p>
+            
+        </article>
+    </main>
+</body>
+</html>

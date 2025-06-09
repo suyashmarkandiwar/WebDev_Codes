@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Variable</title>
+</head>
+<body>
+    <input id="input1"  type="text"> <br/>
+    <button id="button1">Submit</button>
+    <p id="para1">This is para 1</p>
+
+    <script>
+        document.getElementById("button1").onclick = function(){
+            var val;
+            val= document.getElementById("input1").value;
+            console.log(val);
+            document.getElementById("para1").innerHTML = val;
+        }
+
+        //console.log(x);//console (inspect) shows value of x 
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Job Application</h2>
+        <br/>
+        <br/>
+        <label for="Name">Name:</label>
+        <br/>
+        <input type="text" name="Name" id="Name">
+        <br/>
+        <label for="Email">Email:</label>
+        <br/>
+        <input type="email" name="Email" id="Email">
+        <br/>
+        <label for="Phone">Phone:</label>
+        <br/>
+        <input type="tel" name="Phone" id="Phone">
+        <br/>
+        <label for="Resume">Resume:</label>
+        <br/>
+        <input type="file" name="Resume" id="Resume">
+        <br/>
+        <label for="Experience">Experience(years):</label>
+        <br/>
+        <input type="text" name="Experience" id="Experience">
+        <br/>
+        <fieldset>
+            <legend>Skills:</legend>
+                
+            <input type="checkbox" name="check" id="HTML"><br/>
+            <label for="HTML">HTML</label><br/><br/>
+            <input type="checkbox" name="check" id="CSS"><br/>
+            <label for="CSS">CSS</label><br/><br/>
+            <input type="checkbox" name="check" id="JavaScript"><br/>
+            <label for="JavaScript">JavaScript</label><br/><br/>
+
+
+        </fieldset>
+
+        <label for="Edu">Higher Education:</label><br/>
+        <select name="Edu" id="Edu">
+            <option value="High School">High School</option>
+            <option value="Degree">Degree</option>
+            <option value="Masters">Masters</option>
+
+        </select><br/>
+        <p>Availability:</p><br/>
+        <input type="radio" name="availability" id="full-time"><br/>
+        <label for="full-time">FullTime</label><br/>
+        <input type="radio" name="availability" id="part-time"><br/>
+        <label for="part-time">PartTime</label><br/>
+
+
+        <!-- all elements: type, name, id, for should be written radio then only it works as expected -->
+
+        <label for="Comments">Additional Comments:</label><br/>
+        <textarea name="text" id="Comments" cols="30" rows="10" placeholder="Enter your text here..."></textarea><br/>
+        <input type="submit" value="Submit">
+
+        
+
+    </form>
+</body>
+</html>

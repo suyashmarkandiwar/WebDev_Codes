@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>On-click event</title>
+</head>
+<body>
+    <p id="first">Hi User!</p>
+    <button id="change">Change Text</button>
+    <script>
+        document.getElementById("change").onclick = function(){
+            alert("button clicked")
+        document.getElementById("first").innerHTML = "Hello World";
+        }
+
+        //.innerHTML for changing the written sentence
+        //.onclick is a function that allows other actions after clicking it
+        // alert for pop up
+    </script>
+</body>
+</html>
