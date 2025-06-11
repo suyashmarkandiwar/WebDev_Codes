@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Jquery include</title>
+    <script src="jQuery.js"></script>
+   
+</head>
+<body>
+    <!-- src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+        >> This should be added inside the script tag i.e. <script src...> and this script 
+            tag should be inside the head tag. This is specificially used when you want to use website online
+        >> The above link is copied from "Hosted Libraries | Google for Developers"
+            type "embed jQuery" in the search bar.
+        >> The script tag src="jQuery.js" Above one is used for offline use.   
+        -->
+    <script>
+        if(jQuery == "undefined"){
+            alert("jQuery Not included");
+        }else{
+            alert("jQuery included");
+        }
+
+    </script>
+    
+</body>
+</html>

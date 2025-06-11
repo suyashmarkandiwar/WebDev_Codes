@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Manupulating content using jquery</title>
+    <script src="jQuery.js"></script>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T-KEXiSKa-k?si=6LXIYi3gSVdHlFZ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script>
+        $("iframe").hover(function(){
+            $("iframe").attr("src", "https://code.jquery.com/jquery-3.7.1.js");
+        });
+    </script>
+
+</body>
+</html>

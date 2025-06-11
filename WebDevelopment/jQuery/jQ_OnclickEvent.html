@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Onclick event</title>
+    <script src="jQuery.js"></script>
+    <style>
+        #circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: green;
+
+        }
+
+        #square{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin-top: 10px; /*adds space between the 2 squares*/
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div id="square"></div>
+    <div id="square"></div>
+    <script>
+        //$("#circle").hover(function(){
+        //    alert("Circle is clicked");
+        //})
+        //$("#square").click(function(){
+        //    alert("Square is clicked");
+        //})
+
+        // >>All in one now below
+        $("div").click(function(){
+            alert("div is clicked");
+        });
+    </script>
+</body>
+</html>
