@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Form Validation System</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div id="error" class="message-box"></div>
+        <div id="success" class="message-box"></div>
+
+        <div class="formelement">
+            <label for="Email">Email</label>
+            <input type="text" id="Email" name="Email">
+        </div>
+
+        <div class="formelement">
+            <label for="phoneno">Phone Number</label>
+            <input type="text" id="phoneno" name="phoneno">
+        </div>
+
+        <div class="formelement">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div class="formelement">
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" id="confirmpassword" name="confirmpassword">
+        </div>
+
+        <div class="formelement show-password">
+            <input type="checkbox" id="togglePassword"> Show Password
+        </div>
+
+        <input id="submitbutton" type="submit" value="Submit">
+    </div>
+    <script src="form.js"></script>
+    
+</body>
+</html>

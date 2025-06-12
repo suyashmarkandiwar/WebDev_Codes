@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>jQuery UI</title>
+    <script src="jQuery.js"></script>
+    <script src="jquery-ui-1.14.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.14.1.custom/jquery-ui.css">
+
+    <style>
+        #small{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 20px;
+
+        }
+
+        #large{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+
+        }
+
+        p{
+            color: white;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <!-- <div >
+        <p id="drag1">This is draggable</p>  
+        <p id="drag2">This is draggable</p>
+        
+    </div> -->
+
+    <div id="small" class="drag">
+        <p>Drag me to the traget</p>
+    </div>
+    <div id="large" class="drop">
+        <p>Drop here</p>
+    </div>
+        
+    <script>
+        /* $("#drag1").draggable({axis: "y"});
+        $("#drag2").draggable({axis: "x"});
+        Go to this https://jqueryui.com/ site and >>Draggable->Under Examples section >> Constrain movement */
+        $( "#small" ).draggable();
+        $( "#large" ).droppable({
+                drop: function( event, ui ) {
+                    $( this )
+                     
+                      .find( "p" )
+                        .html( "Dropped!" );
+                  }
+          
+                }); 
+        </script>
+</body>
+</html>
