@@ -1,9 +1,38 @@
 <html>
 <head>
-    <title></title>
-    <script></script>
+    <title>Manupulating styples using jquery</title>
+    <script src="jQuery.js"></script>
+    <style>
+        #circle{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        #square{
+            height: 200px;
+            width: 200px;
+            margin-top: 10px;
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    <script></script>
+    <div id="circle"></div>
+    <div id="square"></div>
+    <div id="square"></div>
+
+    <script>
+       /* $("#circle").click(function(){
+            $("#circle").css("background-color", "red");
+            $("#circle").css("width", "400px");
+        }); */
+
+        $("div").click(function(){
+           /* $("div").css("display", "none"); This would disappear all the shapes as div tag is selected */
+           $(this).css("display", "none");
+        });
+    </script>
 </body>
 </html>

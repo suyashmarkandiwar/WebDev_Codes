@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Regular expression</title>
+    <script src="jQuery.js"></script>
+</head>
+<body>
+    <script>
+        var str="This is regular regular regular expression";
+        var regex = /regular/g;
+        var result = str.match(regex);
+        alert(result);
+        /* >> if we put regex = /Regular/ instead of /regular/ we need to do this regex = /Regular/i
+              or else if only /Regular/ is written it will give NULL value 
+           >> to get the number of times a word is occured regex = /regular/g   
+              */
+    </script>
+
+</body>
+</html>
