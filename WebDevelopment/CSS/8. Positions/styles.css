@@ -1,0 +1,57 @@
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    margin: 120px;
+    /* position: relative; */
+}
+
+.box{
+    color: white;
+    width: 100px;
+    height: 100px;
+
+}
+
+.static{
+    position: static;
+    background-color: black
+}
+
+.rel{
+    position: relative;
+    background-color: red;
+    /* top: 50px;
+    left: -100px; */
+    top: 100px;
+    left: 200px;
+}
+
+.abs{
+    position: absolute;
+    background: blue;
+    bottom: 0;
+    right: 0;
+}
+
+.fix{
+    background-color: brown;
+    /* z-index: 5; */
+    position: fixed;
+    /* top: 10px;
+    left: 0; */
+    bottom: 50px;
+    right: 50px;
+
+}
+
+.sti{
+    background-color: purple;
+    position: sticky;
+    top: 300px;
+    left: 150px;
+}
+
+.blankSpace{
+    height: 400vh; /* scroll bar becomes small view height increases */
+}

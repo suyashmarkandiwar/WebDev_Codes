@@ -1,0 +1,34 @@
+main{
+    border: 2px solid brown;
+    /* border-radius: 10px; */
+    width: 50%; /* works according to screen */
+    /* %, vw(view width), vh(view height), px(pixels), em, rem */
+
+    /* width: 50vw; similar to width: 50%; */
+
+}
+
+/* html{
+    font-size: 1em; default
+} */
+
+section{
+    border: 4px dotted green;
+    /* height: 150vh; */
+    width: 70vw;
+}
+
+body{
+font-size: 2em; 
+}
+
+
+h2{
+    /* font-size: 40px; */
+    font-size: 4rem; /* recommended to put font size in em*/
+    /* normally font sizes get multiplied by the default i.e. 1em
+    here 2em*1em
+    and under body tag font-size is 2em then 4em*2em = 8em  heading font size
+    if 4rem is used then it is not multiplied 4(root element)
+    */
+}

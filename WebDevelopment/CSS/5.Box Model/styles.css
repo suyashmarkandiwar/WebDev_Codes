@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* total box maintains same width and height */
+}
+
+
+.box2{
+    padding: 60px;
+}
+
+div{
+    border: 12px solid greenyellow;
+    padding: 10px 40px;
+    /* padding-left: 23px; */
+    margin: 40px 40px; /* top and bottom */
+    width: 250px;
+    height: 250px;
+
+}

@@ -1,0 +1,12 @@
+h1{
+    color: palevioletred;
+    background-color: darkslategrey;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+}
+
+p{
+    text-align: justify;
+    text-indent: 80px;
+}

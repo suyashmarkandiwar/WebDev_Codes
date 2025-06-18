@@ -1,0 +1,16 @@
+h2{
+    background-color: aquamarine;
+    color: purple;
+    text-align: center;
+}
+p{
+    background-color: yellow;
+    text-align: center;
+}
+
+#b{
+    display: block;
+    margin: 20px auto; /* auto centers it horizontally */
+    padding: 10px 20px; /* optional: for better spacing */
+    text-align: center;
+}
