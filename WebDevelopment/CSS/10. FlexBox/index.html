@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 200px;
+            border: 1px solid red;
+            display: flex; /* default direction is row */
+           /* flex-wrap: wrap;*/
+           /* flex-direction: row-reverse; */ /* align row-wise or column wise depending upon user */
+            justify-content: space-between;
+            align-items: stretch;
+
+        }
+
+        .first{
+            order: 1;
+        }
+
+        /*.second{
+            order: 2;
+        }*/
+
+        li{
+            border: 1px solid black;
+            margin: 0.5em;
+            padding: 0.5em;
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li class="first">1st</li>
+        <li>2nd</li>
+        <li class="second">3rd</li>
+    </ul>
+</body>
+</html>

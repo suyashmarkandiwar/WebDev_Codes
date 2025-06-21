@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: cornflowerblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.container{
+    width: 280px;
+    height: 280px;
+    border: 3px solid white;
+    animation: orbit 4s linear infinite;
+    border-radius: 50%;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    /* transition: 1s ease-in; */
+    /* animation-name: shiftTheBox; */
+    /* animation-name: slide-in; */
+
+    animation-name: orbit;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    /* animation-direction:alternate-reverse; */
+     /* first anti-clockwise then clockwise */
+    animation-fill-mode: none;
+
+}
+
+/* .box:hover{
+    transform: translate(200px);
+} */
+
+@keyframes orbit {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-in{
+    0%{
+        transform: translate(-360px);
+    }
+    100%{
+        transform: translate(200px);
+    }
+}
+
+@keyframes shiftTheBox {
+    0%, 100%{ 
+        transform: translate(0, 0);
+        /* border-radius: 50%; */
+    }
+    25%{
+        transform: translate(200px, 0);
+        /* background-color: yellow; */
+    }
+    50%{
+        transform: translate(200px, 200px);
+    }
+    75%{
+        transform: translate(0, 200px);
+    }
+    /* 100%{
+        transform: translate(0, 0);
+    } */
+
+
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: wheat;
+    border-radius: 50%;
+    animation: loading 1s infinite alternate;
+}
+
+.dot:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+
+
+
+@keyframes loading {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+
+}

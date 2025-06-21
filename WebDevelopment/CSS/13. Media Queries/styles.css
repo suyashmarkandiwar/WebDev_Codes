@@ -1,0 +1,27 @@
+body{
+    background-color: aqua;
+}
+
+/* @media(orientation: portrait){   when the width & height becomes equal then color changes  
+    body{
+        background-color: red;
+    }
+} */
+
+/* @media (width <= 500px){  when the width becomes less than or equal to 500px color changes and vice versa if height is mentioned
+    body{
+        background-color: green;
+    }
+} */
+
+@media (min-width: 500px) and (max-width: 600px){
+    body{
+        background-color: red;
+    }
+}
+
+/* @media (width <= 300px){
+    body{
+        background-color: green;
+    }
+} */
