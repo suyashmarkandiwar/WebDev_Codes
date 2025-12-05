@@ -3,55 +3,114 @@
     height: 600px;
     background-color: aqua;
     margin: 120px;
+    padding: 40px;
     /* position: relative; */
 }
 
 .box{
-    color: white;
+    color: black;
     width: 100px;
     height: 100px;
+    background-color: yellow;
 
 }
 
-.static{
+.static {
+    /* 1. Set the container as a flexible box */
+    display: flex; 
+    
+    /* 2. Center content along the main axis (Horizontal) */
+    justify-content: center; 
+    
+    /* 3. Center content along the cross axis (Vertical) */
+    align-items: center; 
+    
+    /* Optional: Set a fixed height so you can see the vertical centering */
+    height: 100px; /* height of box increases or decreases */
+    
+    /* Keep your existing styles */
     position: static;
-    background-color: black
+    background-color: greenyellow;
+    /* text-align: center is now redundant because of justify-content: center */
+    border-radius: 50%;
 }
 
 .rel{
     position: relative;
     background-color: red;
-    /* top: 50px;
-    left: -100px; */
+    top: 50px;
+    left: -100px; 
     top: 100px;
-    left: 200px;
+    left: 100px;
 }
 
 .abs{
     position: absolute;
     background: blue;
-    bottom: 0;
-    right: 0;
+    right: 2px;
+    /* bottom: 0;
+    right: 0; */
+    z-index: 4;
 }
 
-.fix{
-    background-color: brown;
-    /* z-index: 5; */
-    position: fixed;
-    /* top: 10px;
-    left: 0; */
-    bottom: 50px;
-    right: 50px;
+/* 1. position: absolute;
+Removes from Flow: The element (.abs box) is immediately taken out of the space 
+it would normally occupy. The other elements on the page (like .fix and .sti)
+will act as if the absolute box is no longer there and will move up to fill the 
+empty space.
+Positioning Context: Since the commented-out code suggests 
+moving it, the element needs a positioning context.
 
+If no parent element has a defined position (relative, 
+absolute, etc.), the box will position itself relative to 
+the initial containing block (the main <html> or <body>).
+
+The Element's State: The .abs box is now ready to be 
+precisely placed using the offset properties (top, bottom, 
+left, right). */
+
+.fix{
+    background-color: #E6007A;
+    z-index: 3;
+    position: fixed;
+    
+    top: 200px;
+    left: 0;
+    /* bottom: 50px;
+    right: 50px;  */
+    width: 50px;
+    height: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;  /* Centers horizontally *before* rotation */
+    align-items: center;
+    overflow: hidden;
+
+    
+    
+}
+
+.rotate {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    transform: rotate(90deg);
+    padding: 10px;  
+    white-space: nowrap;
 }
 
 .sti{
     background-color: purple;
     position: sticky;
-    top: 300px;
-    left: 150px;
+    /* top: 400px;
+    left: 200px; */
+    bottom:500px;
 }
 
 .blankSpace{
-    height: 400vh; /* scroll bar becomes small view height increases */
-}
+    height: 400vh; 
+} 
+/* scroll bar becomes small view height increases */ 

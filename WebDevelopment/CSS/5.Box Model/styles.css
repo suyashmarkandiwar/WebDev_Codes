@@ -7,14 +7,24 @@
 
 .box2{
     padding: 60px;
+    background-color:aqua;
+    text-align: center;
+    
+}
+.box1{
+    padding: 60px;
+    background-color:aqua;
+    text-align: center;
+    
 }
 
 div{
     border: 12px solid greenyellow;
     padding: 10px 40px;
     /* padding-left: 23px; */
-    margin: 40px 40px; /* top and bottom */
+    margin: 40px 40px; /* top and bottom, left and right */
     width: 250px;
     height: 250px;
+    border-radius: 50%;
 
 }

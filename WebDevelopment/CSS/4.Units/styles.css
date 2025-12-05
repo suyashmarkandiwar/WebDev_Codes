@@ -1,21 +1,21 @@
 main{
     border: 2px solid brown;
     /* border-radius: 10px; */
-    width: 50%; /* works according to screen */
+    width: 100%; /* works according to screen */
     /* %, vw(view width), vh(view height), px(pixels), em, rem */
 
     /* width: 50vw; similar to width: 50%; */
 
 }
 
-/* html{
-    font-size: 1em; default
-} */
+html{
+    font-size: 1em; /* default*/
+}
 
 section{
     border: 4px dotted green;
     /* height: 150vh; */
-    width: 70vw;
+    width: 100vw;
 }
 
 body{

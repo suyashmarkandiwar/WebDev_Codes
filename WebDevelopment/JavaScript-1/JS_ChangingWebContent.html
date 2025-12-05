@@ -3,21 +3,21 @@
     <title>Changing Website Content</title>
 </head>
 <body>
-    <p id="para"></p>
+    <p id="para"> Java </p>
     <button id="add">Click me</button>
     <script>
-        /* document.getElementById("add").onclick = function(){
+        document.getElementById("add").onclick = function(){
             document.getElementById("para").innerHTML = document.getElementById("para").innerHTML +" a programming Language";
             //OR document.getElementById("para").innerHTML += " a programming Language";
-        } */
-
-        /* document.getElementById("add").onclick = function(){
-            document.getElementById("para").innerHTML = "The " + document.getElementById("para").innerHTML
-        } */
+        }
 
         document.getElementById("add").onclick = function(){
-            document.getElementById("para").innerHTML = "<h1> Happy BirthDay! </h1>";
+            document.getElementById("para").innerHTML = "The " + document.getElementById("para").innerHTML
         }
+
+        // document.getElementById("add").onclick = function(){
+        //     document.getElementById("para").innerHTML = "<h1> Happy BirthDay! </h1>";
+        // }
     </script>
 </body>
 </html>

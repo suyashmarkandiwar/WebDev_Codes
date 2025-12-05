@@ -22,8 +22,8 @@
 
 .container{
     padding: 45px;
-    /* --bg-color: rgb(219, 82, 18); */
-    background-color: var(--parent-background-color);
+    --background-color: skyblue;
+    background-color: var(--background-color);
     min-height: 100vh;
 }
 
@@ -35,9 +35,9 @@ h1{
 }
 
 h2{
-    --bg-color: yellow;
-    /* background-color: var(--bg-color); */
-    color: var(--primary-text-color);
+    --text-color: yellow;
+    color: var(--text-color);
+    /* color: var(--primary-text-color); */
 }
 
 .box{
@@ -53,12 +53,13 @@ h2{
 
 h4{
     padding: 45px;
-    /* background-color: var(--bg-color, pink); */
+    background-color: var(--bg-color, pink);
     color: var(--primary-text-color);
 }
 
-@media(min-width: 600px){
+@media(min-width: 500px){
     .container{
         --bg-color: green;
+        background-color: var(--bg-color);
     }
 }

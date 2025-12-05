@@ -6,16 +6,20 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-behavior: smooth; 
+  scroll-padding-top: 80px; /* This creates a "buffer zone" at the top. Since you have a fixed navbar, this ensures the section title doesn't get hidden behind the navbar when the 
+  page finishes scrolling. */
 }
 
 
 /* General styles for the whole page */
 body {
-    font-family: 'Arial', sans-serif; /* Sets a clean sans-serif font */
-    line-height: 1.6;                 /* Increases line spacing for readability */
-    color: #333;                      /* Sets default text color (dark gray) */
+    font-family: 'Arial', sans-serif; 
+    /* Sets a clean sans-serif font */
+    line-height: 1.6;                 
+    /* Increases line spacing for readability */
+    color: #333;                      
+    /* Sets default text color (dark gray) */
 }
 
 /* A container to center and limit width of content */

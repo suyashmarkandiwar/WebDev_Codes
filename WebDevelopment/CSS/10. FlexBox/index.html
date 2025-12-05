@@ -7,16 +7,21 @@
     <title>Flexbox</title>
     <style>
         ul{
-            list-style-type: none;
+            list-style-type: none; /* removes any bullets */
             margin: 0;
             padding: 0;
             height: 200px;
+            /* width: 50px; */
             border: 1px solid red;
             display: flex; /* default direction is row */
-           /* flex-wrap: wrap;*/
-           /* flex-direction: row-reverse; */ /* align row-wise or column wise depending upon user */
-            justify-content: space-between;
-            align-items: stretch;
+            flex-wrap: wrap; 
+            /* When set to wrap, if the items overflow the container, 
+            they will automatically drop down and wrap onto a new 
+            line (or new column, depending on flex-direction). 
+            This prevents items from overflowing or shrinking endlessly. */
+            flex-direction: row-reverse;  /* align row-wise or column wise depending upon user */
+            /* justify-content: space-between; */
+            /* align-items: stretch; */
 
         }
 
@@ -24,15 +29,21 @@
             order: 1;
         }
 
-        /*.second{
+        .second{
             order: 2;
-        }*/
+        }
+        /* For example, if you have three items:
+            Item A: order: 2
+            Item B: order: 1
+            Item C: order: 0
+            The visual output will be: Item C, Item B, Item A. */
 
         li{
             border: 1px solid black;
             margin: 0.5em;
             padding: 0.5em;
         }
+
     </style>
 
 </head>

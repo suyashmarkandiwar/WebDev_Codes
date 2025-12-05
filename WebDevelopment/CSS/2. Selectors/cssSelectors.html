@@ -16,7 +16,16 @@
     >>Nested Selector
     >>Descendant Selector 
     >>Direct Child Selector
-    
+
+    CSS Selector Priority Order (Highest → Lowest)
+
+    1. ID Selector
+    2. Class Selector (includes .class, [attributes], pseudo-classes like :hover)
+    3. Element Selector (tag selectors like h1, p, div)
+    4. *Universal Selector (*)
+    5. Descendant Selector (A B) (depends on the right-most selector)
+    6. Nested Selector (same as descendant — no special priority by itself)
+    7. Direct Child Selector (A > B) (depends on the right-most selector)    
 -->
 
     <header>

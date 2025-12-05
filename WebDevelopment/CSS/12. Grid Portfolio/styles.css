@@ -15,21 +15,47 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap:100px; 
+    /* Gap between .left and .right */
     background: linear-gradient(to right, #061d0c, #48aa65);
+    padding: 50px;
 }
 
+/* Even Spacing: It ensures that the spacing between the 
+items, and the space between the items and the edges of the container, 
+is exactly equal. 
+space-evenly ensures all gaps—internal gaps and outer gaps—are the same size.
+*/
 .left{
-    flex-basis: 30%;
+    flex-basis: 50%;
+    /* left: 50px; */
+    /* justify-content: center; */
 }
+
+/* Initial Size: It tells the browser that the element with
+ the class .left (which is a flex item) should ideally start
+ with a width equal to 30% of the entire container's width.
+Flex-Grow/Shrink:
+If there's extra space left over, the item will grow (if flex-grow is set).
+If there isn't enough space, the item will shrink (if flex-shrink is set). */
 
 .right{
     flex-basis: 50%;
     display: grid;
     gap: 8px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: Defines the horizontal size 
+    and number of columns in the grid.
+
+    repeat(3, ...): This function tells the browser to
+    repeat the following column definition three times.
+
+    1fr: This is the key unit, standing for "fractional 
+    unit." It represents an equal share of the available 
+    free space in the container. */
     
     grid-auto-rows: 120px;
+    ;
 
 
 }
@@ -42,18 +68,20 @@ body{
 
 .left p{
     color: #ddd;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .child-imgs{
-    background-size: cover;  /* makes the short image full image */
+    background-size: cover; 
+    /* makes the short image full image */
+    
     background-position: top;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222;
+    background-color: #333;
     background-blend-mode: hard-light;
     transition: all 1s ease-in-out;
     cursor: pointer;
@@ -66,8 +94,17 @@ body{
 }
 
 .row-2{
-    grid-row: span 2; /* expands the box-1 to the next row */
-    /* grid-column: span 2; expands the box-1 to the next column */
+    grid-row: span 2; 
+    /* The span Keyword: The keyword span tells the browser
+    to stretch the item across the specified number of 
+    tracks (rows).
+    The Effect: Setting span 2 makes the grid item stretch 
+    downward to cover the area of two horizontal rows from 
+    its starting position. */
+
+    /* expands the box-1 to the next row */
+    /* grid-column: span 2;  */
+    /* expands the box-1 to the next column */
 }
 
 .col-2{
@@ -92,4 +129,4 @@ body{
         grid-column: span 3;
     }
 
-}
+} 

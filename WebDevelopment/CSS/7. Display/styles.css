@@ -8,5 +8,6 @@
 
 p{
     width: 60%;
-    display: inline;
+    display: inline; /* elements get on the same line */
+    
 }

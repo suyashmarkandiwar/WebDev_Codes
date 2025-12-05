@@ -9,38 +9,86 @@
     border: 2px solid red;
     height: 700px;
     display: grid;
-    /* gap: 10px; */
-    row-gap: 18px;
-    column-gap: 6px;
+    gap: 10px;
+    /* row-gap: 18px; */
+    /* column-gap: 6px; */
     
-    /* grid-template-columns: repeat(auto-fill, 100px); */
-    grid-template-columns: 200px 200px 200px;
-    /* grid-template-rows: 150px 70px 110px;  for first 3 rows respectively */
-    /* grid-auto-rows: 120px;  for rest of the rows */
+    grid-template-columns: repeat(auto-fill, 100px); 
+    /* repeat(...): A function that repeats a track list a specified number of times.
+
+    auto-fill: This is the key part. It tells the browser to automatically 
+    create as many columns as possible without causing the container to overflow.
+
+    100px: This sets the fixed width for each of those automatically created columns. */
+
+    grid-template-columns: 200px 200px 200px; 
+    /* 3 fixed columns the above line generates */
+
+    grid-template-rows: 200px 200px; 
+    /* The first row to be 200px tall.
+    The second row to be 200px tall. */
+
+    grid-auto-rows: 120px;  /* for rest of the rows */
+    /* overflow: hidden;
+    overflow: scroll; */
 
     /* justify-content: baseline; */
 
-    /* align-content: start; */
+    align-content:start;
+    /* If you used center, the grid would be vertically 
+    centered in the 700px space. */
 
 }
+
 
 .box{
     border: 2px solid green;
     padding: 12px;
 }
 
-#box-1{
+#box-2{
     background-color: yellow;
-    /* grid-column-start: 1;
-    grid-column-end: -1; */
+    grid-column-start: 1;
+    grid-column-end: -1; 
+    /* The -1 Value: The value -1 always refers to the very last
+    grid line on the column axis (the far right edge of the 
+    grid). */
+    /* order: -1; */
 
-    /* grid-column: 1/3; */
-    /* grid-row: 1/4; */
-    /* grid-row: 1/span 3; */
-    grid-area: 1/1/3/3;
+    grid-column: 1/2;
+    grid-row: 3/4;
 
-    /* justify-self: center;
-    align-self: flex-end; */
+    /* The CSS property grid-column: 1 / 3; is a shorthand property 
+    used in CSS Grid to define both the starting and ending positions
+    of a grid item along the horizontal (column) axis.
+
+    Here's a short breakdown of what the values mean:    
+    grid-column: This property replaces two longer properties: 
+    grid-column-start and grid-column-end.    
+    1 (Start Line): This sets the item to begin at the first 
+    vertical grid line (grid-column-start: 1).    
+    / (Separator): Separates the start and end values.    
+    3 (End Line): This sets the item to end just before the 
+    third vertical grid line (grid-column-end: 3).     */
+
+    grid-row: 1/span 3;
+
+    /* span 3 (Span Value): This tells the browser to make the 
+    item stretch across a total of three grid tracks (rows) 
+    from its starting line. */
+
+    grid-area: 1/2/2/3;
+    /* Row Start / Column Start / Row End / Column End */
+
+    /* justify-self: center; */
+    /* justify-self aligns a single item.
+    justify-items aligns all items in the container.
+    justify-content aligns the entire grid structure within the container. */
+
+    align-self: center;
+    /* start Aligns to the top edge of the cell.
+    centerCenters vertically in the cell.
+    flex-endPushes to the bottom edge of the cell. */
 
 
 }

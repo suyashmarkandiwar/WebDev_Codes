@@ -1,11 +1,14 @@
 .container{
-    /* width: 400px;
+    width: 400px;
     height: 400px;
-    border: 1px solid red; */
-    /* overflow: visible; */
-    /* overflow: hidden; */
-    /* overflow: scroll; */
+    border: 1px solid red;
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
     /* overflow: auto; */
+    /* The overflow: auto CSS property tells the browser to 
+    handle content that is too large to fit inside its 
+    container box. */
     text-align: justify;
 
 }

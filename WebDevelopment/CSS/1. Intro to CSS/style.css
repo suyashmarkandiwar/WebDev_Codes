@@ -1,16 +1,20 @@
 h2{
-    background-color: aquamarine;
-    color: purple;
+    background-color: lightblue;
+    color: green;
     text-align: center;
 }
 p{
     background-color: yellow;
-    text-align: center;
+    color:green;
+    text-align: left;
 }
 
 #b{
     display: block;
-    margin: 20px auto; /* auto centers it horizontally */
+    margin: 20px auto; /* auto centers it horizontally (top, bottom, left, right)*/
     padding: 10px 20px; /* optional: for better spacing */
-    text-align: center;
+    /* text-align: center; */
 }
+
+/* display: block makes the element a block-level box (starts on a new line and accepts width/height). By itself it does NOT reliably center the element.
+margin: 20px auto will center a block only when the block has a definite width smaller than its container. If the block's width is auto it usually expands to fill the container, so there’s nothing to center. */
