@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Importance of Tailwind CSS</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <ul class="bg-blue-600 text-white flex">
+        <li class="flex"><a class="p-3 hover:bg-zinc-700" href="#">Home</a></li>
+        <li class="flex"><a class="p-3 hover:bg-zinc-700" href="#">Products</a></li>
+        <li class="flex"><a class="p-3 hover:bg-zinc-700" href="#">About Us</a></li>
+        <li class="flex"><a class="p-3 hover:bg-zinc-700" href="#">Contact Us</a></li>
+    </ul>
+</body>
+</html>
+
+<!-- Without Flex (The "Pop Out"): By default, 
+<a> tags are inline.
+if only padding given to ul and no flex to li
+Inline behavior: Vertical padding (p-3) is painted 
+on the screen, but it does not push the parent open. The parent (li) ignores the 
+padding height, so the background color spills (pops) out.
+
+when flex is added to li and no padding to ul
+With Flex (The Fix): When you add class="flex" to the 
+<li>, the <a> inside it becomes a flex item.
+
+Flex Item behavior: Flex items behave like blocks. They 
+force the parent (li) to expand and "occupy the space" of the padding. 
+The parent grows to fit the child. -->
