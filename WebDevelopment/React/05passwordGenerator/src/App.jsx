@@ -28,7 +28,7 @@ function App() {
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0, 20)
-    window.navigator.clipboard.writeText(password)
+    window.navigator.clipboard.writeText(password) 
   }, [password])
 
   useEffect(() => {passwordGenerator()}, [length, numberAllowed, charAllowed, passwordGenerator])
